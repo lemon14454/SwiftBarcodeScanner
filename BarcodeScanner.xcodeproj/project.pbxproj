@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		E2F7B6BB2916429B0081BA1B /* BarcodeScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F7B6BA2916429B0081BA1B /* BarcodeScannerApp.swift */; };
-		E2F7B6BD2916429B0081BA1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F7B6BC2916429B0081BA1B /* ContentView.swift */; };
+		E2F7B6BD2916429B0081BA1B /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F7B6BC2916429B0081BA1B /* BarcodeScannerView.swift */; };
 		E2F7B6BF2916429C0081BA1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2F7B6BE2916429C0081BA1B /* Assets.xcassets */; };
 		E2F7B6C22916429C0081BA1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2F7B6C12916429C0081BA1B /* Preview Assets.xcassets */; };
+		E2F7B6C9291644C70081BA1B /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F7B6C8291644C70081BA1B /* ScannerVC.swift */; };
+		E2F7B6CD291649160081BA1B /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F7B6CC291649160081BA1B /* ScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E2F7B6B72916429B0081BA1B /* BarcodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcodeScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F7B6BA2916429B0081BA1B /* BarcodeScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerApp.swift; sourceTree = "<group>"; };
-		E2F7B6BC2916429B0081BA1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E2F7B6BC2916429B0081BA1B /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
 		E2F7B6BE2916429C0081BA1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2F7B6C12916429C0081BA1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E2F7B6C8291644C70081BA1B /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
+		E2F7B6CC291649160081BA1B /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		E2F7B6B92916429B0081BA1B /* BarcodeScanner */ = {
 			isa = PBXGroup;
 			children = (
+				E2F7B6C8291644C70081BA1B /* ScannerVC.swift */,
+				E2F7B6CC291649160081BA1B /* ScannerView.swift */,
 				E2F7B6BA2916429B0081BA1B /* BarcodeScannerApp.swift */,
-				E2F7B6BC2916429B0081BA1B /* ContentView.swift */,
+				E2F7B6BC2916429B0081BA1B /* BarcodeScannerView.swift */,
 				E2F7B6BE2916429C0081BA1B /* Assets.xcassets */,
 				E2F7B6C02916429C0081BA1B /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2F7B6BD2916429B0081BA1B /* ContentView.swift in Sources */,
+				E2F7B6C9291644C70081BA1B /* ScannerVC.swift in Sources */,
+				E2F7B6CD291649160081BA1B /* ScannerView.swift in Sources */,
+				E2F7B6BD2916429B0081BA1B /* BarcodeScannerView.swift in Sources */,
 				E2F7B6BB2916429B0081BA1B /* BarcodeScannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,11 +278,13 @@
 				DEVELOPMENT_TEAM = A29285CJVB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need Camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +309,13 @@
 				DEVELOPMENT_TEAM = A29285CJVB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need Camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
